@@ -2,6 +2,64 @@
 *:before,
 *after{
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
+
+body{
+    background-color: #ffde2a;
+    padding: 0px;
+    margin: 0px;
+}
+
+.player{
+    background-color: #840931;
+    height: 200px;
+    width: 140px;
+    position: absolute;
+    margin: auto;
+    left: 0;   /*centralizou a Div Player left, right, top e bottom*/
+    right: 0;
+    top: 0;
+    bottom: 0; 
+    border: 10px solid #000000;
+    border-bottom: none; /*top, right, bottom, left*/
+    border-radius: 60px 80px 0 0;
+    z-index: 1; /*A propriedade Z-index especifica a ordem da pilha de um elemento do anúncio. Um elemento com número de ordem de empilhamento superior será exibido à frente de outro com número inferior.*/
+}
+
+.player:after{
+    content: "";
+    position: absolute;
+    width: 92%;
+    height: 85%;
+    background-color: #ea1616;
+    top: 2.5px;
+    left: 6px;
+    border-radius: 58% 70% 28% 42% / 28% 56% 88% 89%;
+}
+
+.legs{
+    height: 50px;
+    width: 60px;
+    background-color: #840931;
+    position: absolute;
+    bottom: -50px;
+    left: -10px;
+    border: 10px solid #000000;
+    border-top: none;
+    border-radius: 0 0 22px 22px;
+}
+
+.legs:before{
+    content: "";
+    height: 45px;
+    width: 60px;
+    background-color: #840931;
+    position: absolute;
+    right: -90px;
+    border: 10px solid #000000;
+    border-top: none;
+    border-radius: 0 0 22px 22px;
+}
+
